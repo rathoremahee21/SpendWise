@@ -1,0 +1,194 @@
+.intro{
+
+    width:100%;
+    height:100vh;
+
+    background:#000;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.intro-card{
+
+    width:900px;
+
+    text-align:center;
+
+}
+
+/* ---------- Divider ---------- */
+
+.divider{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+.divider::before,
+.divider::after{
+
+    content:"";
+
+    flex:1;
+
+    border-top:2px dotted #ff9800;
+
+}
+
+.divider span{
+
+    color:#ff9800;
+
+    font-size:18px;
+
+}
+
+.top-divider{
+
+    opacity:0;
+
+    animation:growLine .8s ease forwards;
+
+}
+
+.bottom-divider{
+
+    margin-top:45px;
+
+    opacity:0;
+
+    animation:growLine .8s ease 2s forwards;
+
+}
+
+/* ---------- Sanskrit ---------- */
+
+.sanskrit{
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:72px;
+
+    font-weight:600;
+
+    line-height:1.4;
+
+    color:white;
+
+    margin:50px 0;
+
+    opacity:0;
+
+    animation:fadeUp 1s ease .6s forwards;
+
+}
+
+/* ---------- English ---------- */
+
+.english{
+
+    font-family:'Playfair Display', serif;
+
+    font-size:28px;
+
+    line-height:1.8;
+
+    color:#d1d5db;
+
+    opacity:0;
+
+    animation:fadeUp 1s ease 1.2s forwards;
+
+}
+
+/* ---------- Chapter ---------- */
+
+.chapter{
+
+    font-family:'Playfair Display', serif;
+
+    font-size:20px;
+
+    color:#8b8b8b;
+
+    margin-top:30px;
+
+    letter-spacing:2px;
+
+    opacity:0;
+
+    animation:fadeUp 1s ease 1.8s forwards;
+
+}
+
+/* ---------- Animations ---------- */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes growLine{
+
+    from{
+
+        opacity:0;
+
+        transform:scaleX(0);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scaleX(1);
+
+    }
+
+}
+
+
+.fade-out{
+
+    animation:fadeOut .8s ease forwards;
+
+}
+
+@keyframes fadeOut{
+
+    from{
+
+        opacity:1;
+
+    }
+
+    to{
+
+        opacity:0;
+
+    }
+
+}

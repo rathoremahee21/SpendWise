@@ -1,0 +1,82 @@
+.feature-card{
+
+    background:#111111;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:35px;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+    text-align:left;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#16A34A;
+
+    box-shadow:0 20px 45px rgba(22,163,74,.20);
+
+}
+
+.feature-card:hover .feature-icon{
+    transform:rotate(-8deg) scale(1.1);
+}
+
+.feature-icon{
+
+    width:70px;
+ transition:.35s;
+    height:70px;
+
+    border-radius:18px;
+
+    background:rgba(22,163,74,.12);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    color:#16A34A;
+
+    margin-bottom:25px;
+
+}
+
+.feature-card h3{
+
+    color:white;
+
+    font-size:26px;
+
+    margin-bottom:18px;
+
+}
+
+.feature-card p{
+
+    color:#BDBDBD;
+
+    line-height:1.8;
+
+    font-size:17px;
+
+}
+.section-line{
+    width:90px;
+    height:4px;
+    background:#16A34A;
+    border-radius:20px;
+    margin:18px auto;
+}
