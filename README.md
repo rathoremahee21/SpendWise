@@ -1,16 +1,117 @@
-# React + Vite
+# 💰 SpendWise
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Track Every Rupee. Split Every Bill. Save Smarter.
 
-Currently, two official plugins are available:
+SpendWise is a modern expense management web application that helps users track their expenses, manage budgets, categorize spending, and split bills with friends.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Built with React and designed with a clean, responsive interface, SpendWise focuses on making personal finance management simple and intuitive.
 
-## React Compiler
+## 🌐 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+https://spend-wise-hazel.vercel.app
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✨ **Expense Tracking**
+
+* Add and manage daily expenses
+* Categorize expenses
+* Keep track of spending history
+
+✨ **Budget Management**
+
+* Create and monitor budgets
+* Understand spending patterns
+
+✨ **Split Bills**
+
+* Track shared expenses with friends
+* Calculate reimbursements easily
+
+✨ **Analytics Dashboard**
+
+* Visualize expenses using charts
+* Analyze financial habits
+
+✨ **Modern UI**
+
+* Responsive design
+* Smooth animations
+* Clean user experience
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React.js
+* Vite
+* JavaScript
+* CSS
+
+### Libraries
+
+* React Router
+* React Icons
+* Recharts
+* GSAP Animations
+
+### Deployment
+
+* Vercel
+
+## 📸 Screenshots
+
+(Add your project screenshots here)
+
+## 📂 Project Structure
+
+```
+src
+├── components
+├── pages
+├── assets
+├── context
+├── hooks
+├── services
+└── utils
+```
+
+## ⚙️ Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/rathoremahee21/SpendWise.git
+```
+
+Navigate to the project folder:
+
+```bash
+cd SpendWise
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+## 👩‍💻 Author
+
+**Mahee Singh Rathore**
+
+GitHub:
+https://github.com/rathoremahee21
+
+LinkedIn:
+(Add your LinkedIn profile link)
+
+---
+
+⭐ If you like this project, consider giving it a star!
