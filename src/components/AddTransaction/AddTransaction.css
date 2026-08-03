@@ -1,0 +1,42 @@
+.transaction-form{
+    margin-top: 20px;
+    background: #1f2937;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.transaction-form h3{
+    color: white;
+}
+
+.transaction-form label{
+    color: #d1d5db;
+    font-size: 14px;
+}
+
+.transaction-form input,
+.transaction-form select{
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.save-btn{
+    margin-top: 10px;
+    padding: 12px;
+    background: #22c55e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.save-btn:hover{
+    background: #16a34a;
+}

@@ -1,0 +1,93 @@
+.topbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+.topbar-left h1{
+
+    font-size:34px;
+
+    color:#111827;
+
+}
+
+.topbar-left p{
+
+    color:#6b7280;
+
+    margin-top:8px;
+
+}
+
+.topbar-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.topbar-right input{
+
+    width:280px;
+
+    padding:12px 18px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#f5f7fb;
+
+    outline:none;
+
+}
+
+.icon-btn{
+
+    width:44px;
+
+    height:44px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    background:white;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+}
+
+.profile-circle{
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:50%;
+
+    background:#22c55e;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:bold;
+
+}

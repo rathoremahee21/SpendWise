@@ -1,0 +1,426 @@
+.transition-container {
+  position: fixed;
+  inset: 0;
+  background: #050505;
+  overflow: hidden;
+  z-index: 9999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center Text */
+
+.transition-text {
+  position: absolute;
+  text-align: center;
+  z-index: 20;
+}
+
+.transition-text h1 {
+
+    font-size:72px;
+
+    font-weight:700;
+
+    color:#22c55e;
+
+    letter-spacing:2px;
+
+    text-shadow:
+      0 0 20px rgba(34,197,94,.35);
+
+    animation:
+      fadeLogo .8s ease,
+      pulse 2s infinite;
+}
+.transition-text p {
+  margin-top: 15px;
+  color: #cfcfcf;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/* Money Layers */
+
+.money-layer,
+.coin-layer,
+.rupee-layer {
+  position: absolute;
+  inset: 0;
+}
+
+/* NOTE */
+
+.note {
+  position: absolute;
+
+  width: 140px;
+  height: 70px;
+
+  border-radius: 14px;
+
+  background: linear-gradient(
+      135deg,
+      #1d9f4f,
+      #33d46f
+  );
+
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 24px;
+  font-weight: bold;
+
+  box-shadow:
+      0 0 25px rgba(34,197,94,.4);
+
+  animation: flyNote linear infinite;
+}
+
+/* COIN */
+
+.coin {
+  position: absolute;
+
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+
+  background: gold;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  font-weight:bold;
+  color:#333;
+
+  box-shadow:
+      0 0 18px rgba(255,215,0,.5);
+
+  animation:
+      flyCoin linear infinite,
+      spinCoin 2s linear infinite;
+}
+
+/* RUPEE */
+
+.rupee {
+  position:absolute;
+
+  font-size:34px;
+
+  color:#32d974;
+
+  opacity:.7;
+
+  animation:flyRupee linear infinite;
+}
+
+/* Animations */
+
+@keyframes flyNote {
+
+  0% {
+    left: -180px;
+    transform:
+      translateY(0px)
+      rotate(var(--rotation))
+      scale(.85);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  30% {
+    transform:
+      translateY(-12px)
+      rotate(calc(var(--rotation) + 3deg))
+      scale(1);
+  }
+
+  55% {
+    transform:
+      translateY(8px)
+      rotate(calc(var(--rotation) - 2deg));
+  }
+
+  100% {
+    left: calc(100vw + 220px);
+    transform:
+      translateY(-5px)
+      rotate(var(--rotation));
+    opacity: 0;
+  }
+}
+
+@keyframes flyCoin{
+
+  from{
+
+      transform:translateX(-100px);
+
+  }
+
+  to{
+
+      transform:translateX(calc(100vw + 150px));
+
+  }
+
+}
+
+@keyframes flyRupee{
+
+  from{
+
+      transform:translateX(-100px);
+
+      opacity:0;
+
+  }
+
+  20%{
+
+      opacity:1;
+
+  }
+
+  80%{
+
+      opacity:1;
+
+  }
+
+  to{
+
+      transform:translateX(calc(100vw + 120px));
+
+      opacity:0;
+
+  }
+
+}
+
+@keyframes spinCoin{
+
+  from{
+
+      rotate:0deg;
+
+  }
+
+  to{
+
+      rotate:360deg;
+
+  }
+
+}
+
+@keyframes pulse{
+
+  0%{
+
+      opacity:.6;
+      transform:scale(.98);
+
+  }
+
+  50%{
+
+      opacity:1;
+      transform:scale(1.04);
+
+  }
+
+  100%{
+
+      opacity:.6;
+      transform:scale(.98);
+
+  }
+
+}
+
+.spend-note {
+
+  position: absolute;
+
+  left: -180px;
+
+  width: 115px;
+  height: 62px;
+
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #22c55e,
+      #4ade80
+    );
+
+  border: 1px solid rgba(255,255,255,.15);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  box-shadow:
+      0 12px 35px rgba(34,197,94,.35);
+
+  animation: flyNote linear forwards;
+   z-index:5;
+}
+
+.spend-note::before{
+
+    content:"₹";
+
+    position:absolute;
+
+    font-size:70px;
+
+    color:rgba(255,255,255,.08);
+
+    transform:rotate(-20deg);
+
+}
+
+.spend-note::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:50%;
+
+    height:100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.35),
+            transparent
+        );
+
+    animation:shine 2.5s linear infinite;
+}
+
+.corner{
+
+    position:absolute;
+
+    color:white;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+    opacity:.9;
+
+}
+
+.top-left{
+
+    top:8px;
+
+    left:10px;
+
+}
+
+.top-right{
+
+    top:8px;
+
+    right:10px;
+
+}
+
+.bottom-left{
+
+    bottom:8px;
+
+    left:10px;
+
+}
+
+.bottom-right{
+
+    bottom:8px;
+
+    right:10px;
+
+}
+
+.note-center{
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.note-center h4{
+
+    font-size:16px;
+
+    margin-bottom:2px;
+
+}
+
+.note-center p{
+
+    font-size:14px;
+
+    opacity:.9;
+
+}
+@keyframes shine{
+
+    from{
+
+        left:-100%;
+
+    }
+
+    to{
+
+        left:150%;
+
+    }
+
+}
+@keyframes fadeLogo{
+
+    from{
+
+        opacity:0;
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}

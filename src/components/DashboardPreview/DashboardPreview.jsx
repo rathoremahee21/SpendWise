@@ -92,6 +92,15 @@ function DashboardPreview() {
             <div className="bar b6"></div>
 
           </div>
+          <div className ="months">
+            <span>Jan</span>
+            <span>Feb</span>
+            <span>March</span>
+            <span>Apr</span>
+            <span>June</span>
+             <span>July</span>
+
+          </div>
 
         </div>
 

@@ -1,17 +1,30 @@
 .sidebar{
     width:260px;
     height:100vh;
-    background:#0F0F0F;
-    border-right:1px solid rgba(22,163,74,.15);
-
+    
+    
     display:flex;
     flex-direction:column;
 
     padding:35px 25px;
-
+    transition:.3s;
     position:fixed;
     left:0;
     top:0;
+}
+
+.dashboard.dark .sidebar{
+     
+    background:#0F0F0F;
+    border-right:1px solid rgba(22,163,74,.15);
+
+}
+
+.dashboard.light .sidebar{
+
+    background:#FFFFFF;
+    border-right:1px solid #E5E7EB;
+
 }
 
 .logo h2{
@@ -28,11 +41,19 @@
 
 .menu a{
     text-decoration:none;
-    color:#CFCFCF;
+    
     font-size:18px;
     padding:14px 18px;
     border-radius:12px;
     transition:.3s;
+}
+
+.dashboard.dark .menu a{
+    color:#CFCFCF;
+}
+
+.dashboard.light .menu a{
+    color:#374151;
 }
 
 .menu a:hover{

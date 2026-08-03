@@ -143,6 +143,11 @@
 
     transition:.35s;
 
+     text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .secondary-btn:hover{
@@ -422,6 +427,39 @@ animation:keepStraight 20s linear infinite;
     50%{
         transform:translateX(-50%) translateY(10px);
     }
+
+}
+
+.github-btn{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:18px 38px;
+
+    border:2px solid #16A34A;
+
+    border-radius:14px;
+
+    text-decoration:none;
+
+    color:#fff;
+
+    font-size:18px;
+    font-weight:600;
+
+    transition:.35s;
+}
+
+.github-btn:hover{
+
+    background:#16A34A;
+
+    color:white;
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 40px rgba(22,163,74,.35);
 
 }
 

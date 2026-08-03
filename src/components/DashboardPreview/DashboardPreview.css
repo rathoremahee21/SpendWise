@@ -227,19 +227,34 @@
     align-items:flex-end;
 
     justify-content:space-between;
-
+    gap : 12px;
 }
 
 .bar{
 
-    width:45px;
+    width:28px;
 
     background:#16A34A;
 
-    border-radius:15px 15px 0 0;
+    border-radius:12px 12px 0 0;
 
     animation:grow 1.2s ease;
+    transform-origin :bottom;
+    transition:0.3s;
+    cursor:pointer;
+}
 
+.bar:hover{
+    transform:scaleY(1.05);
+    opacity:0.9;
+}
+
+.months{
+    display:flex;
+    justify-content:space-between;
+    margin-top:12px;
+    color:#888;
+    font-size:12px;
 }
 
 .b1{height:120px;}
@@ -249,12 +264,13 @@
 .b5{height:150px;}
 .b6{height:230px;}
 
-@keyframes grow{
-
+@keyframes growBar{
     from{
-
-        height:0;
+        transform : scaleY(0);
 
     }
-
+    to{
+        transform: scaleY(1);
+    }
 }
+

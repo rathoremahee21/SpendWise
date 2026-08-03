@@ -1,4 +1,6 @@
 import "./Sidebar.css";
+import { Link } from "react-router-dom";
+
 
 function Sidebar() {
   return (
@@ -9,19 +11,28 @@ function Sidebar() {
       </div>
 
       <nav className="menu">
+      <Link to="/analytics">
+      Analytics</Link>
 
-        <a href="#">Dashboard</a>
+       <Link to="/dashboard">
+         Dashboard
+        </Link>
+      
 
-        <a href="#">Analytics</a>
+      <Link to="/budget">
+          Budget
+        </Link>
 
-        <a href="#">Budget</a>
+        <Link to="/split-bills">
+          Split Bills
+        </Link>
 
-        <a href="#">Split Bills</a>
 
-        <a href="#">Savings</a>
+        <Link to="/settings">
+          Settings
+        </Link>
 
-        <a href="#">Settings</a>
-
+       
       </nav>
 
     </aside>

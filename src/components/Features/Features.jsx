@@ -13,7 +13,7 @@ import { MdOutlineSavings } from "react-icons/md";
 
 function Features() {
   return (
-    <section className="features">
+    <section id="features" className="features">
 
       <p className="features-tag">
         WHY SPENDWISE

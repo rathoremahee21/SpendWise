@@ -7,6 +7,8 @@ import Features from "../../components/Features/Features";
 import About from "../../components/About/About";
 import DashboardPreview from "../../components/DashboardPreview/DashboardPreview";
 
+
+
 function Landing() {
 
   const [showIntro, setShowIntro] = useState(true);
@@ -17,7 +19,7 @@ function Landing() {
 
       setShowIntro(false);
 
-    }, 5000);
+    }, 7000);
 
     return () => clearTimeout(timer);
 

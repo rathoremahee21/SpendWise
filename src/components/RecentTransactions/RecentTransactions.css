@@ -1,0 +1,116 @@
+.transactions-card{
+    margin-top:30px;
+    padding:25px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.dashboard.dark .transactions-card{
+    background:#161B22;
+    border:1px solid rgba(255,255,255,.06);
+}
+
+.dashboard.light .transactions-card{
+    background:white;
+    border:1px solid #E5E7EB;
+}
+
+.transaction-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+}
+.transaction-left{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.empty-state{
+    text-align:center;
+    padding:40px;
+    color:#9ca3af;
+}
+
+.empty-state h3{
+    margin-bottom:10px;
+    font-size:20px;
+}
+
+.empty-state p{
+    font-size:14px;
+}
+
+.transaction-icon{
+    width:45px;
+    height:45px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#16A34A20;
+    font-size:20px;
+}
+
+.dashboard.dark .transaction-left h4{
+    color:white;
+}
+
+.dashboard.light .transaction-left h4{
+    color:#111827;
+}
+
+.transaction-left p{
+    color:#9CA3AF;
+    font-size:14px;
+}
+
+.amount{
+    color:#16A34A;
+    font-weight:bold;
+}
+
+.transaction-item button{
+
+    border:none;
+
+    padding:8px 14px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+.transaction-item button:first-of-type{
+
+    background:#2563EB;
+    color:white;
+
+}
+
+.transaction-item button:last-of-type{
+
+    background:#DC2626;
+    color:white;
+
+}
+.transaction-item button:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.empty-state{
+
+    padding:60px;
+
+}

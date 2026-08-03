@@ -1,0 +1,59 @@
+.budget-card{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+padding:30px;
+
+border-radius:20px;
+
+margin-top:35px;
+
+transition:.3s;
+
+}
+.progress-bar{
+    width:100%;
+    height:12px;
+   
+    border-radius:20px;
+    overflow:hidden;
+    margin-top:15px;
+}
+
+.dashboard.dark .progress-bar{
+
+background:#2A2A2A;
+
+}
+
+.dashboard.light .progress-bar{
+
+background:#E5E7EB;
+
+}
+
+.progress-fill{
+    height:100%;
+    background:#22c55e;
+    border-radius:20px;
+}
+
+.dashboard.dark .budget-card{
+
+background:#161B22;
+
+border:1px solid rgba(255,255,255,.06);
+
+}
+
+.dashboard.light .budget-card{
+
+background:white;
+
+border:1px solid #E5E7EB;
+
+}

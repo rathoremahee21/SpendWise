@@ -1,5 +1,8 @@
 import "./Hero.css";
+import { useState } from "react";
+//import { useNavigate } from "react-router-dom";
 
+import MoneyTransition from "../MoneyTransition/MoneyTransition";
 import {
   FaCreditCard,
   FaWallet,
@@ -15,9 +18,10 @@ import { useNavigate } from "react-router-dom";
 
 function Hero() {
   const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
   return (
     
-    <section className="hero">
+    <section id="home" className="hero">
 
       {/* LEFT SIDE */}
 
@@ -44,14 +48,29 @@ function Hero() {
 
           <button
     className="primary-btn"
-    onClick={() => navigate("/dashboard")}
+   onClick={() => {
+
+  setLoading(true);
+
+  setTimeout(() => {
+
+    navigate("/dashboard");
+
+  }, 2500);
+
+}}
 >
     Get Started
 </button>
-          <button className="secondary-btn">
-            View GitHub
-          </button>
 
+     <a
+    href="https://github.com/rathoremahee21"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="github-btn"
+>
+    View GitHub
+</a>
         </div>
 
       </div>
@@ -114,7 +133,7 @@ function Hero() {
   <p>Scroll Down</p>
 
 </div>
-
+{loading && <MoneyTransition />}
     </section>
   );
 }
